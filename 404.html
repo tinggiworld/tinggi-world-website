@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,follow">
+<title>404 — Seite nicht gefunden · Tinggi World</title>
+<meta name="description" content="Diese Seite existiert nicht — aber wir helfen dir, wieder den richtigen Weg zu finden. Direkt zur Startseite oder zu unseren Services.">
+<meta name="theme-color" content="#06070C">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+<meta property="og:image" content="https://www.tinggiworld.com/assets/img/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://www.tinggiworld.com/assets/img/og-image.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Lora:ital,wght@0,400;0,500;1,400&family=Lato:wght@400;500;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+<style>
+  html, body { height: 100%; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  .nf-page {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: calc(var(--nav-h) + 32px) 6vw 64px;
+    position: relative;
+  }
+  .nf-bg {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    background:
+      radial-gradient(circle at 18% 22%, rgba(196, 98, 45, 0.10), transparent 38%),
+      radial-gradient(circle at 82% 28%, rgba(46, 74, 122, 0.08), transparent 42%),
+      radial-gradient(circle at 50% 92%, rgba(74, 124, 89, 0.10), transparent 45%);
+  }
+  .nf-inner {
+    position: relative;
+    z-index: 1;
+    max-width: 720px;
+    width: 100%;
+    text-align: center;
+  }
+  .nf-eyebrow {
+    font-family: var(--font-ui);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 24px;
+    display: inline-block;
+  }
+  .nf-eyebrow .dot {
+    display: inline-block;
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 12px;
+    transform: translateY(-2px);
+  }
+  .nf-number {
+    font-family: var(--font-display);
+    font-size: clamp(120px, 22vw, 240px);
+    font-weight: 500;
+    line-height: 0.9;
+    letter-spacing: -0.02em;
+    margin-bottom: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.04em;
+  }
+  .nf-number .d-ink        { color: var(--ink); }
+  .nf-number .d-terracotta { color: var(--terracotta); }
+  .nf-number .d-forest     { color: var(--forest); }
+  .nf-headline {
+    font-family: var(--font-display);
+    font-size: clamp(28px, 4vw, 44px);
+    font-weight: 500;
+    line-height: 1.12;
+    letter-spacing: -0.01em;
+    margin-bottom: 18px;
+    text-wrap: balance;
+  }
+  .nf-sub {
+    font-family: var(--font-body);
+    font-size: clamp(16px, 1.2vw, 18px);
+    line-height: 1.65;
+    color: var(--muted);
+    max-width: 52ch;
+    margin: 0 auto 40px;
+    text-wrap: pretty;
+  }
+  .nf-row {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 48px;
+  }
+  .nf-shortcuts {
+    padding-top: 32px;
+    border-top: 1px solid var(--border);
+    max-width: 480px;
+    margin: 0 auto;
+  }
+  .nf-shortcuts-label {
+    font-family: var(--font-ui);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 14px;
+    display: inline-block;
+  }
+  .nf-shortcuts-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 18px;
+    justify-content: center;
+  }
+  .nf-link {
+    font-family: var(--font-body);
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--text);
+    transition: color 200ms var(--ease), transform 200ms var(--ease);
+  }
+  .nf-link:hover { transform: translateX(2px); }
+  .nf-link[data-color="terracotta"]:hover { color: var(--terracotta); }
+  .nf-link[data-color="ink"]:hover        { color: var(--ink); }
+  .nf-link[data-color="forest"]:hover     { color: var(--forest); }
+  .nf-link[data-color="amber"]:hover      { color: var(--amber); }
+  .nf-link .arr { display: inline-block; transition: transform 200ms var(--ease); margin-right: 6px; }
+  .nf-link:hover .arr { transform: translateX(2px); }
+
+  @media (max-width: 600px) {
+    .nf-page { align-items: flex-start; padding-top: calc(var(--nav-h) + 56px); }
+    body { overflow: auto; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <a href="index.html" class="nav-brand" aria-label="Tinggi World">
+    <span class="token-stream" aria-hidden="true">
+      <span class="ts-bar ts-1"></span>
+      <span class="ts-bar ts-2"></span>
+      <span class="ts-bar ts-3"></span>
+      <span class="ts-bar ts-4"></span>
+    </span>
+    <span class="nav-brand-text">Tinggi<span class="nav-brand-accent"> World</span></span>
+  </a>
+  <div class="nav-links" id="navLinks">
+    <a href="index.html#ai"       class="nav-link" data-pill="ai"><span class="nav-dot"></span>AI Automation</a>
+    <a href="index.html#web-seo"  class="nav-link" data-pill="web"><span class="nav-dot"></span>Website + SEO</a>
+    <a href="index.html#coaching" class="nav-link" data-pill="coach"><span class="nav-dot"></span>Business Aufbau</a>
+    <a href="index.html#tinggi"   class="nav-link" data-pill="about"><span class="nav-dot"></span>Über uns</a>
+    <a href="index.html#faq"      class="nav-link" data-pill="faq"><span class="nav-dot"></span>FAQ</a>
+  </div>
+  <button class="nav-burger" id="navBurger" aria-label="Menü">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<main class="nf-page">
+  <div class="nf-bg"></div>
+
+  <div class="nf-inner">
+    <span class="nf-eyebrow">
+      <span class="dot" style="background: var(--terracotta);"></span>
+      <span class="dot" style="background: var(--forest); margin-left: -6px;"></span>
+      <span class="dot" style="background: var(--ink); margin-left: -6px;"></span>
+      Seite nicht gefunden
+    </span>
+
+    <div class="nf-number" aria-label="404">
+      <span class="d-ink">4</span><span class="d-terracotta">0</span><span class="d-forest">4</span>
+    </div>
+
+    <h1 class="nf-headline">Hier ist nichts.<br>Aber wir wissen wo's was gibt.</h1>
+
+    <p class="nf-sub">
+      Diese Seite existiert nicht — vielleicht ein alter Link, vielleicht ein Tippfehler.
+      Kein Drama. Wähl unten einen Weg zurück.
+    </p>
+
+    <div class="nf-row">
+      <a href="index.html" class="btn btn-primary">
+        Zur Startseite
+        <span aria-hidden="true">→</span>
+      </a>
+      <a href="index.html#booking" class="btn btn-outline">
+        Kostenloses Erstgespräch →
+      </a>
+    </div>
+
+    <div class="nf-shortcuts">
+      <span class="nf-shortcuts-label">Oder direkt zu:</span>
+      <div class="nf-shortcuts-row">
+        <a href="index.html#ai"       class="nf-link" data-color="terracotta"><span class="arr">→</span>AI-Automation</a>
+        <a href="index.html#web-seo"  class="nf-link" data-color="ink"><span class="arr">→</span>Website + SEO</a>
+        <a href="index.html#coaching" class="nf-link" data-color="forest"><span class="arr">→</span>Business + Gründung</a>
+        <a href="index.html#tinggi"   class="nf-link" data-color="amber"><span class="arr">→</span>Über uns</a>
+        <a href="index.html#faq"      class="nf-link" data-color="terracotta"><span class="arr">→</span>FAQ + Glossar</a>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="nf-legal-footer" aria-label="Rechtliches">
+  <a href="agb.html">AGB</a>
+  <a href="impressum.html">Impressum</a>
+  <a href="datenschutz.html">Datenschutz</a>
+  <a href="widerrufsbelehrung.html">Widerruf</a>
+</footer>
+
+</body>
+</html>

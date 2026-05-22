@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Datenschutzerklärung — Tinggi World (DSG + DSGVO)</title>
+<meta name="description" content="Datenschutzerklärung von Tinggi World — wie wir mit deinen Daten umgehen. DSG-konform für die Schweiz, DSGVO-konform für DE/AT. Hosting in CH und EU.">
+<link rel="canonical" href="https://www.tinggiworld.com/datenschutz.html">
+<meta name="theme-color" content="#06070C">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.tinggiworld.com/datenschutz.html">
+<meta property="og:title" content="Datenschutzerklärung — Tinggi World">
+<meta property="og:description" content="DSG- und DSGVO-konform. Hosting in CH und EU. Volle Transparenz über deine Daten.">
+<meta property="og:image" content="https://www.tinggiworld.com/assets/img/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="de_CH">
+<meta property="og:site_name" content="Tinggi World">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Datenschutzerklärung — Tinggi World">
+<meta name="twitter:description" content="DSG- und DSGVO-konform. Hosting in CH und EU.">
+<meta name="twitter:image" content="https://www.tinggiworld.com/assets/img/og-image.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Lora:ital,wght@0,400;0,500;1,400&family=Lato:wght@400;500;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+<style>
+  /* Legal page chrome — clean reading layout on top of base tokens */
+  body { background: var(--bg); color: var(--text); }
+  .legal-page {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 140px 6vw 96px;
+  }
+  .legal-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--font-ui);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    color: var(--muted);
+    text-decoration: none;
+    margin-bottom: 36px;
+    transition: color 200ms var(--ease);
+  }
+  .legal-back:hover { color: var(--text); }
+  .legal-eyebrow {
+    font-family: var(--font-ui);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 18px;
+    display: inline-block;
+  }
+  .legal-eyebrow .dot {
+    display: inline-block;
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 12px;
+    transform: translateY(-2px);
+  }
+  .legal-title {
+    font-family: var(--font-display);
+    font-size: clamp(38px, 5vw, 60px);
+    font-weight: 500;
+    line-height: 1.08;
+    letter-spacing: -0.015em;
+    margin-bottom: 24px;
+    text-wrap: balance;
+  }
+  .legal-intro {
+    font-family: var(--font-body);
+    font-size: 17px;
+    line-height: 1.7;
+    color: var(--text);
+    max-width: 56ch;
+    margin-bottom: 16px;
+    text-wrap: pretty;
+  }
+  .legal-meta {
+    font-family: var(--font-body);
+    font-size: 15.5px;
+    line-height: 1.7;
+    color: var(--muted);
+    margin-bottom: 12px;
+  }
+  .legal-meta strong { color: var(--text); font-weight: 500; }
+  .legal-meta a { color: var(--terracotta); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 200ms var(--ease); }
+  .legal-meta a:hover { border-bottom-color: var(--terracotta); }
+  .legal-validity {
+    font-family: var(--font-ui);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--terracotta);
+    margin-bottom: 48px;
+    padding-top: 12px;
+    border-top: 1px solid var(--border);
+    display: inline-block;
+    padding-right: 24px;
+  }
+
+  .legal-toc {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 22px 26px;
+    margin-bottom: 56px;
+  }
+  .legal-toc-title {
+    font-family: var(--font-ui);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 12px;
+  }
+  .legal-toc ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    columns: 2;
+    column-gap: 28px;
+    counter-reset: ds;
+  }
+  @media (max-width: 600px) {
+    .legal-toc ol { columns: 1; }
+  }
+  .legal-toc li {
+    counter-increment: ds;
+    font-family: var(--font-body);
+    font-size: 14.5px;
+    line-height: 1.55;
+    padding: 4px 0;
+    break-inside: avoid;
+  }
+  .legal-toc li::before {
+    content: counter(ds, decimal-leading-zero) "  ";
+    color: var(--terracotta);
+    font-family: var(--font-ui);
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.06em;
+  }
+  .legal-toc a {
+    color: var(--text);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 200ms var(--ease);
+  }
+  .legal-toc a:hover { border-bottom-color: var(--text); }
+
+  .legal-section {
+    margin-bottom: 44px;
+    scroll-margin-top: calc(64px + 24px);
+  }
+  .legal-section h2 {
+    font-family: var(--font-display);
+    font-size: clamp(22px, 2.2vw, 26px);
+    font-weight: 500;
+    line-height: 1.25;
+    margin-bottom: 14px;
+    color: var(--text);
+    letter-spacing: -0.005em;
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+  }
+  .legal-section h2 .legal-num {
+    font-family: var(--font-ui);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    color: var(--terracotta);
+    flex-shrink: 0;
+    width: 32px;
+  }
+  .legal-section h3 {
+    font-family: var(--font-display);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.3;
+    color: var(--text);
+    margin: 20px 0 6px;
+    padding-left: 46px;
+  }
+  .legal-section p,
+  .legal-section ul {
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.75;
+    color: var(--text);
+    margin-bottom: 12px;
+    text-wrap: pretty;
+    padding-left: 46px;
+  }
+  .legal-section ul {
+    list-style: none;
+    padding-left: 46px;
+  }
+  .legal-section ul li {
+    position: relative;
+    padding-left: 22px;
+    margin-bottom: 8px;
+  }
+  .legal-section ul li::before {
+    content: "—";
+    position: absolute;
+    left: 0;
+    color: var(--terracotta);
+    font-weight: 700;
+  }
+  .legal-section strong { font-weight: 500; color: var(--text); }
+  .legal-section em { font-style: normal; color: var(--muted); }
+  .legal-section a {
+    color: var(--terracotta);
+    text-decoration: none;
+    border-bottom: 1px solid var(--terracotta);
+    padding-bottom: 1px;
+    word-break: break-word;
+  }
+  .legal-section a:hover { opacity: 0.75; }
+
+  .legal-callout {
+    margin: 20px 0 12px 46px;
+    padding: 16px 20px;
+    background: rgba(196, 98, 45, 0.06);
+    border-left: 2px solid var(--terracotta);
+    border-radius: 0 8px 8px 0;
+    font-family: var(--font-body);
+    font-size: 15px;
+    line-height: 1.65;
+    color: var(--text);
+  }
+
+  @media (max-width: 600px) {
+    .legal-section h2 { flex-direction: column; gap: 4px; }
+    .legal-section h3,
+    .legal-section p,
+    .legal-section ul,
+    .legal-callout { padding-left: 0; margin-left: 0; }
+  }
+
+  .legal-footer {
+    margin-top: 56px;
+    padding-top: 28px;
+    border-top: 1px solid var(--border);
+    font-family: var(--font-body);
+    font-size: 14px;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+  .legal-footer a { color: var(--text); text-decoration: none; border-bottom: 1px solid var(--border); transition: border-color 200ms var(--ease); }
+  .legal-footer a:hover { border-bottom-color: var(--text); }
+</style>
+
+<!-- Privacy-friendly analytics by Plausible — wird nach Consent (Analyse) geladen -->
+<script type="text/plain" data-cookie-consent="analytics" async src="https://plausible.io/js/pa-MJmjMK8x1ovVNPynp-o6t.js"></script>
+<script type="text/plain" data-cookie-consent="analytics">
+  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+  plausible.init()
+</script>
+
+<!-- LinkedIn Insight Tag: ID hier eintragen (ersetze PARTNER_ID_HIER_EINTRAGEN) — wird nach Consent (Marketing) geladen -->
+<script type="text/plain" data-cookie-consent="marketing">
+  _linkedin_partner_id = "PARTNER_ID_HIER_EINTRAGEN";
+  window._linkedin_data_partner_ids = (window._linkedin_data_partner_ids || []);
+  window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+  (function(l){if(!l){window.lintrk=function(a,b){window.lintrk.q.push([a,b])};window.lintrk.q=[]}
+    var s=document.getElementsByTagName("script")[0];var b=document.createElement("script");
+    b.type="text/javascript";b.async=true;b.src="https://snap.licdn.com/li.lms-analytics/insight.min.js";
+    s.parentNode.insertBefore(b,s)})(window.lintrk);
+</script>
+
+<!-- Meta Pixel: ID hier eintragen (ersetze PIXEL_ID_HIER_EINTRAGEN) — wird nach Consent (Marketing) geladen -->
+<script type="text/plain" data-cookie-consent="marketing">
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init','PIXEL_ID_HIER_EINTRAGEN');
+  fbq('track','PageView');
+</script>
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <a href="index.html" class="nav-brand" aria-label="Tinggi World">
+    <span class="token-stream" aria-hidden="true">
+      <span class="ts-bar ts-1"></span>
+      <span class="ts-bar ts-2"></span>
+      <span class="ts-bar ts-3"></span>
+      <span class="ts-bar ts-4"></span>
+    </span>
+    <span class="nav-brand-text">Tinggi<span class="nav-brand-accent"> World</span></span>
+  </a>
+  <div class="nav-links" id="navLinks">
+    <a href="index.html#ai"       class="nav-link" data-pill="ai"><span class="nav-dot"></span>AI Automation</a>
+    <a href="index.html#web-seo"  class="nav-link" data-pill="web"><span class="nav-dot"></span>Website + SEO</a>
+    <a href="index.html#coaching" class="nav-link" data-pill="coach"><span class="nav-dot"></span>Business Aufbau</a>
+    <a href="index.html#tinggi"   class="nav-link" data-pill="about"><span class="nav-dot"></span>Über uns</a>
+    <a href="index.html#faq"      class="nav-link" data-pill="faq"><span class="nav-dot"></span>FAQ</a>
+  </div>
+  <button class="nav-burger" id="navBurger" aria-label="Menü">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<main class="legal-page">
+
+  <a href="index.html" class="legal-back">
+    <span aria-hidden="true">←</span> Zurück zur Startseite
+  </a>
+
+  <span class="legal-eyebrow">
+    <span class="dot" style="background: var(--terracotta);"></span>
+    <span class="dot" style="background: var(--forest); margin-left: -6px;"></span>
+    <span class="dot" style="background: var(--ink); margin-left: -6px;"></span>
+    Rechtliches
+  </span>
+
+  <h1 class="legal-title">Datenschutzerklärung.</h1>
+
+  <p class="legal-intro">
+    Tinggi World nimmt den Schutz deiner persönlichen Daten ernst. Diese
+    Datenschutzerklärung informiert dich darüber, welche Daten wir erheben,
+    wie wir sie verwenden und welche Rechte du hast.
+  </p>
+  <p class="legal-meta">
+    <strong>Rechtsgrundlage:</strong> Schweizerisches Datenschutzgesetz (DSG)
+    sowie — für Kunden in der EU / EWR — die Datenschutz-Grundverordnung (DSGVO).
+  </p>
+  <div class="legal-validity">Stand: Mai 2026</div>
+
+  <nav class="legal-toc" aria-label="Inhaltsverzeichnis">
+    <div class="legal-toc-title">Inhalt</div>
+    <ol>
+      <li><a href="#ds-1">Verantwortliche Stelle</a></li>
+      <li><a href="#ds-2">Welche Daten wir erheben</a></li>
+      <li><a href="#ds-3">Zweck der Datenverarbeitung</a></li>
+      <li><a href="#ds-4">Rechtsgrundlage (DSGVO)</a></li>
+      <li><a href="#ds-5">Drittanbieter und Datenübermittlung</a></li>
+      <li><a href="#ds-6">Speicherdauer</a></li>
+      <li><a href="#ds-7">Deine Rechte</a></li>
+      <li><a href="#ds-8">Cookies und Tracking</a></li>
+      <li><a href="#ds-9">Datensicherheit</a></li>
+      <li><a href="#ds-10">Werbung + Tracking auf unserer Website</a></li>
+      <li><a href="#ds-11">Auftragsverarbeitung</a></li>
+      <li><a href="#ds-12">Beschwerderecht</a></li>
+      <li><a href="#ds-13">Änderungen dieser Datenschutzerklärung</a></li>
+    </ol>
+  </nav>
+
+  <section class="legal-section" id="ds-1">
+    <h2><span class="legal-num">01</span>Verantwortliche Stelle</h2>
+    <p>
+      <strong>Tinggi World</strong><br>
+      Sulzelstrasse 10, 8846 Willerzell, Schweiz<br>
+      E-Mail: <a href="mailto:hello@tinggiworld.com">hello@tinggiworld.com</a><br>
+      Website: <a href="https://www.tinggiworld.com">www.tinggiworld.com</a>
+    </p>
+  </section>
+
+  <section class="legal-section" id="ds-2">
+    <h2><span class="legal-num">02</span>Welche Daten wir erheben</h2>
+    <p>Wir erheben folgende Kategorien personenbezogener Daten:</p>
+    <ul>
+      <li><strong>Kontaktdaten:</strong> Name, E-Mail-Adresse, Telefonnummer (bei Kontaktaufnahme oder Buchung)</li>
+      <li><strong>Vertragsdaten:</strong> Rechnungs- und Zahlungsinformationen, Projektunterlagen, Angebote</li>
+      <li><strong>Nutzungsdaten:</strong> IP-Adresse, Browser-Typ, besuchte Seiten, Zeitpunkt des Besuchs (via Server-Logs)</li>
+      <li><strong>Kommunikation:</strong> E-Mails, WhatsApp-Nachrichten, Meeting-Transkripte (sofern zugestimmt)</li>
+      <li><strong>Buchhaltungsdaten:</strong> Rechnungen, Zahlungseingänge, ESR / CAMT-Dateien (via Bexio)</li>
+    </ul>
+  </section>
+
+  <section class="legal-section" id="ds-3">
+    <h2><span class="legal-num">03</span>Zweck der Datenverarbeitung</h2>
+    <ul>
+      <li>Erbringung und Abrechnung unserer Dienstleistungen (AI-Automation, Website + SEO, Gründungsberatung)</li>
+      <li>Kommunikation und Kundensupport (E-Mail, WhatsApp, Videokonferenz)</li>
+      <li>Terminbuchungen via Calendly oder Cal.com (je nach Kundenwahl — Drittanbieter mit eigenen Datenschutzrichtlinien)</li>
+      <li>Erstellung und Versand von Angeboten, Verträgen und Rechnungen</li>
+      <li>Verbesserung unserer Website und Dienstleistungen</li>
+      <li>Erfüllung gesetzlicher Pflichten (Buchführung, Aufbewahrungspflichten)</li>
+    </ul>
+  </section>
+
+  <section class="legal-section" id="ds-4">
+    <h2><span class="legal-num">04</span>Rechtsgrundlage (DSGVO)</h2>
+    <ul>
+      <li><strong>Art. 6 Abs. 1 lit. b DSGVO</strong> — Vertragserfüllung</li>
+      <li><strong>Art. 6 Abs. 1 lit. c DSGVO</strong> — Rechtliche Verpflichtung</li>
+      <li><strong>Art. 6 Abs. 1 lit. f DSGVO</strong> — Berechtigte Interessen</li>
+      <li><strong>Art. 6 Abs. 1 lit. a DSGVO</strong> — Einwilligung (z. B. Newsletter, Meeting-Aufzeichnung)</li>
+    </ul>
+  </section>
+
+  <section class="legal-section" id="ds-5">
+    <h2><span class="legal-num">05</span>Drittanbieter und Datenübermittlung</h2>
+    <p>
+      Wir setzen folgende Drittanbieter ein, die Zugang zu personenbezogenen
+      Daten haben können:
+    </p>
+
+    <h3>Hosting + Infrastruktur</h3>
+    <ul>
+      <li><strong>Infomaniak Network AG</strong> (Hosting) — Schweiz (Genf), Daten ausschliesslich in der Schweiz. <a href="https://infomaniak.com/de/agb/datenschutzrichtlinie">infomaniak.com/de/agb/datenschutzrichtlinie</a></li>
+      <li><strong>Hetzner Online GmbH</strong> (Hosting, alternativ) — Deutschland / Finnland, vollständig DSGVO-konform. <a href="https://hetzner.com/legal/privacy-policy">hetzner.com/legal/privacy-policy</a></li>
+    </ul>
+
+    <h3>Buchungen + Terminplanung</h3>
+    <ul>
+      <li><strong>Calendly</strong> (Option A) — USA, Datenübermittlung auf Basis von Standardvertragsklauseln (SCC). <a href="https://calendly.com/privacy">calendly.com/privacy</a></li>
+      <li><strong>Cal.com</strong> (Option B) — USA / EU, Open-Source, kann selbst gehostet werden. <a href="https://cal.com/privacy">cal.com/privacy</a></li>
+      <li><strong>Calenso AG</strong> (Option C) — Schweiz, Server ausschliesslich in der Schweiz, ISO 27001 und BSI-C5 zertifiziert, vollständig DSGVO- und nDSG-konform, kein Datentransfer in Drittländer. <a href="https://calenso.com/datenschutz">calenso.com/datenschutz</a></li>
+    </ul>
+    <div class="legal-callout">
+      <strong>Hinweis:</strong> Wir bieten alle drei Buchungsoptionen an — du
+      wählst das bevorzugte System. Für Kunden mit erhöhten Datenschutz­anforderungen
+      (z. B. Treuhänder, Berufsgeheimnisträger) empfehlen wir <strong>Calenso</strong>
+      als Schweizer Lösung ohne Datenübermittlung ins Ausland.
+    </div>
+
+    <h3>Buchhaltung + ERP</h3>
+    <ul>
+      <li><strong>Bexio AG</strong> (Buchhaltung, Rechnungsstellung, ESR / CAMT) — Schweiz, Daten ausschliesslich in der Schweiz. <a href="https://bexio.com/de-CH/agb/datenschutz">bexio.com/de-CH/agb/datenschutz</a></li>
+    </ul>
+
+    <h3>Automatisierung + Projektmanagement</h3>
+    <ul>
+      <li><strong>n8n GmbH</strong> (Workflow-Automatisierung) — Deutschland, DSGVO-konform. <a href="https://n8n.io/legal/privacy">n8n.io/legal/privacy</a></li>
+      <li><strong>Notion Labs</strong> (Projektmanagement, intern) — USA, Datenübermittlung auf Basis von SCC. <a href="https://notion.so/privacy">notion.so/privacy</a></li>
+    </ul>
+
+    <h3>Kommunikation</h3>
+    <ul>
+      <li><strong>WhatsApp Business</strong> (Meta Platforms) — Kundenkommunikation auf Wunsch. USA, Datenübermittlung auf Basis von SCC. <a href="https://whatsapp.com/legal/privacy-policy">whatsapp.com/legal/privacy-policy</a></li>
+    </ul>
+
+    <h3>Website</h3>
+    <ul>
+      <li><strong>Google Fonts</strong> — kann IP-Adresse an Google-Server übermitteln. Wir nutzen wo möglich lokal eingebundene Schriften, um dies zu vermeiden.</li>
+    </ul>
+
+    <p>
+      Bei Übermittlungen in Länder ohne angemessenes Datenschutzniveau (insb. USA)
+      stützen wir uns auf Standardvertragsklauseln (SCC) gemäss DSGVO Art. 46 oder
+      auf den EU-U.S. Data Privacy Framework (DPF), sofern der Anbieter zertifiziert ist.
+    </p>
+
+    <h3>KI-Modelle (AI-Automation-Projekte)</h3>
+    <p>
+      Im Rahmen von AI-Automation-Projekten empfehlen wir den Einsatz von
+      <strong>AWS Bedrock</strong> (EU-Region Frankfurt) im Kunden-eigenen
+      AWS-Konto. In diesem Modell agiert Tinggi World als Auftragsverarbeiter —
+      die Datenhoheit verbleibt beim Kunden. Token-Kosten werden direkt vom
+      Kunden-AWS-Konto abgerechnet. Alternativ ist ein <strong>On-Premise-Betrieb</strong>
+      (z. B. via Ollama) möglich, was besonders für Berufsgeheimnisträger empfohlen wird.
+    </p>
+  </section>
+
+  <section class="legal-section" id="ds-6">
+    <h2><span class="legal-num">06</span>Speicherdauer</h2>
+    <p>
+      Wir speichern deine Daten nur so lange, wie es für den jeweiligen Zweck
+      erforderlich ist oder gesetzliche Aufbewahrungspflichten bestehen:
+    </p>
+    <ul>
+      <li><strong>Vertragsdaten:</strong> mindestens 10 Jahre gemäss schweizerischem Obligationenrecht (OR)</li>
+      <li><strong>Buchhaltungsbelege:</strong> 10 Jahre gemäss Art. 958f OR</li>
+      <li><strong>Kommunikationsdaten</strong> (E-Mail, WhatsApp): bis zu 3 Jahre nach Vertragsende</li>
+      <li><strong>Meeting-Transkripte:</strong> werden nach Abschluss des jeweiligen Projekts oder auf Wunsch gelöscht</li>
+      <li><strong>Nutzungsdaten</strong> (Logs): in der Regel 30–90 Tage</li>
+    </ul>
+  </section>
+
+  <section class="legal-section" id="ds-7">
+    <h2><span class="legal-num">07</span>Deine Rechte</h2>
+    <p>Du hast folgende Rechte bezüglich deiner personenbezogenen Daten:</p>
+    <ul>
+      <li><strong>Auskunft</strong> (Art. 15 DSGVO / Art. 25 DSG): Du kannst jederzeit erfahren, welche Daten wir über dich gespeichert haben.</li>
+      <li><strong>Berichtigung</strong> (Art. 16 DSGVO): Unrichtige Daten werden auf Anfrage korrigiert.</li>
+      <li><strong>Löschung</strong> (Art. 17 DSGVO): Du kannst die Löschung deiner Daten verlangen, sofern keine gesetzlichen Aufbewahrungspflichten entgegenstehen.</li>
+      <li><strong>Einschränkung der Verarbeitung</strong> (Art. 18 DSGVO)</li>
+      <li><strong>Datenübertragbarkeit</strong> (Art. 20 DSGVO): Daten können in maschinenlesbarem Format herausgegeben werden.</li>
+      <li><strong>Widerspruch</strong> (Art. 21 DSGVO)</li>
+      <li><strong>Widerruf einer Einwilligung:</strong> jederzeit mit Wirkung für die Zukunft</li>
+    </ul>
+    <p>
+      Um deine Rechte auszuüben, wende dich an
+      <a href="mailto:hello@tinggiworld.com">hello@tinggiworld.com</a>.
+    </p>
+  </section>
+
+  <section class="legal-section" id="ds-8">
+    <h2><span class="legal-num">08</span>Cookies und Tracking</h2>
+    <p>
+      Unsere Website verwendet ausschliesslich technisch notwendige Cookies für
+      den Betrieb. Wir setzen keine Tracking- oder Marketing-Cookies ein, ohne
+      deine Einwilligung.
+    </p>
+    <p>
+      Calendly, Cal.com und andere eingebundene Drittanbieter können eigene
+      Cookies setzen — bitte beachte deren jeweilige Datenschutzerklärungen.
+    </p>
+  </section>
+
+  <section class="legal-section" id="ds-9">
+    <h2><span class="legal-num">09</span>Datensicherheit</h2>
+    <p>
+      Wir setzen technische und organisatorische Massnahmen ein, um deine Daten
+      vor unbefugtem Zugriff, Verlust oder Missbrauch zu schützen:
+    </p>
+    <ul>
+      <li>Verschlüsselte Übertragung via HTTPS / TLS</li>
+      <li>Hosting bei europäischen / schweizerischen Anbietern (Infomaniak CH, Hetzner DE)</li>
+      <li>Zugriff auf personenbezogene Daten nur für berechtigte Mitarbeitende (Romina Bolleter, Michel Schnider)</li>
+      <li>Regelmässige Sicherheitsupdates und Zugriffskontrolle</li>
+    </ul>
+  </section>
+
+  <section class="legal-section" id="ds-10">
+    <h2><span class="legal-num">10</span>Analyse + Tracking auf unserer Website</h2>
+    <p>
+      Auf unserer Website tinggiworld.com setzen wir folgende Analyse- und
+      Marketing-Tools ein. Über unseren Cookie-Banner kannst du selbst entscheiden,
+      welche Kategorien (Notwendig, Analyse, Marketing) aktiviert werden.
+      Rechtsgrundlage für Analyse- und Marketing-Tools ist Art. 6 Abs. 1 lit. a DSGVO
+      (Einwilligung).
+    </p>
+
+    <h3>Google Fonts (Kategorie: Notwendig)</h3>
+    <p>
+      Wir verwenden Google Fonts von Google Ireland Ltd. zur einheitlichen Darstellung
+      unserer Schriftarten. Bei jedem Seitenaufruf wird deine IP-Adresse an Google
+      übertragen, damit der Browser die Schrift laden kann. Diese Verarbeitung ist
+      technisch notwendig für die ordnungsgemässe Darstellung der Website.
+    </p>
+    <ul>
+      <li><strong>Anbieter:</strong> Google Ireland Ltd. / Google LLC (USA)</li>
+      <li><strong>Zweck:</strong> Einheitliche Schriftdarstellung</li>
+      <li><strong>Datenschutzrichtlinie:</strong> <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
+    </ul>
+
+    <h3>Plausible Analytics (Kategorie: Analyse)</h3>
+    <p>
+      Wir nutzen <strong>Plausible Analytics</strong> der Plausible Insights OÜ, Västriku tn 2,
+      50403 Tartu, Estland. Plausible ist eine datenschutzfreundliche Web-Analyse-Lösung,
+      die <strong>keine Cookies setzt</strong>, <strong>keine personenbezogenen Daten</strong> sammelt und
+      Besucherdaten <strong>vollständig auf EU-Servern</strong> verarbeitet. IP-Adressen werden
+      sofort gehasht und nach Generierung einer anonymen Tagessignatur verworfen — es
+      ist keine Wiedererkennung einzelner Besucher möglich. Plausible ist nachweislich
+      DSGVO-, DSG-, PECR- und CCPA-konform.
+    </p>
+    <ul>
+      <li><strong>Anbieter:</strong> Plausible Insights OÜ, Estland (EU)</li>
+      <li><strong>Zweck:</strong> Aggregierte Reichweiten- und Nutzungsmessung (Seitenaufrufe, Quellen, Geräteklassen)</li>
+      <li><strong>Cookies:</strong> Keine</li>
+      <li><strong>Datenübermittlung in Drittländer:</strong> Keine — vollständig EU-Hosting</li>
+      <li><strong>Datenschutzrichtlinie:</strong> <a href="https://plausible.io/privacy">plausible.io/privacy</a></li>
+      <li><strong>Opt-out:</strong> Cookie-Banner — Kategorie „Analyse" deaktivieren</li>
+    </ul>
+
+    <h3>LinkedIn Insight Tag (Kategorie: Marketing)</h3>
+    <p>
+      Der LinkedIn Insight Tag der <strong>LinkedIn Ireland Unlimited Company</strong>,
+      Wilton Plaza, Dublin 2, Irland, ist technisch <strong>vorbereitet, aber standardmässig
+      deaktiviert</strong>. Er wird ausschliesslich aktiviert, sobald du im Cookie-Banner
+      die Kategorie „Marketing" zustimmst. Das Tag ermöglicht uns Conversion-Tracking und
+      Remarketing auf LinkedIn — insbesondere für B2B-Zielgruppen (KMU, Agenturen, Berater).
+      Dabei werden pseudonymisierte Daten (u. a. URL, Referrer, IP-Adresse,
+      Geräteinformationen) an LinkedIn übertragen. Daten können in die USA weitergeleitet
+      werden.
+    </p>
+    <ul>
+      <li><strong>Anbieter:</strong> LinkedIn Ireland Unlimited Company / LinkedIn Corp. (USA)</li>
+      <li><strong>Zweck:</strong> Conversion-Tracking, Remarketing, Zielgruppen-Analyse (B2B)</li>
+      <li><strong>Aktivierung:</strong> Nur nach Einwilligung — Kategorie „Marketing" im Cookie-Banner</li>
+      <li><strong>Datenschutzrichtlinie:</strong> <a href="https://linkedin.com/legal/privacy-policy">linkedin.com/legal/privacy-policy</a></li>
+      <li><strong>Datenübermittlung USA:</strong> Standardvertragsklauseln (SCC)</li>
+      <li><strong>Opt-out:</strong> Cookie-Banner oder <a href="https://linkedin.com/psettings/enhanced-advertising">linkedin.com/psettings/enhanced-advertising</a></li>
+    </ul>
+
+    <h3>Meta Pixel (Kategorie: Marketing)</h3>
+    <p>
+      Der Meta Pixel der <strong>Meta Platforms Ireland Ltd.</strong>, 4 Grand Canal Square,
+      Dublin 2, Irland, ist technisch <strong>vorbereitet, aber standardmässig deaktiviert</strong>.
+      Er wird ausschliesslich aktiviert, sobald du im Cookie-Banner die Kategorie
+      „Marketing" zustimmst. Das Pixel erfasst dann Besuche auf unserer Website und
+      Aktionen (z. B. Kontaktformular ausgefüllt) und übermittelt diese anonymisiert
+      an Meta. Damit können wir Werbeanzeigen auf Facebook und Instagram zielgerichtet
+      ausspielen (Remarketing). Daten können in die USA übertragen werden.
+    </p>
+    <ul>
+      <li><strong>Anbieter:</strong> Meta Platforms Ireland Ltd. / Meta Platforms Inc. (USA)</li>
+      <li><strong>Zweck:</strong> Conversion-Tracking, Remarketing, Lookalike Audiences</li>
+      <li><strong>Aktivierung:</strong> Nur nach Einwilligung — Kategorie „Marketing" im Cookie-Banner</li>
+      <li><strong>Datenschutzrichtlinie:</strong> <a href="https://facebook.com/privacy/policy">facebook.com/privacy/policy</a></li>
+      <li><strong>Datenübermittlung USA:</strong> Standardvertragsklauseln (SCC)</li>
+      <li><strong>Opt-out:</strong> Cookie-Banner oder <a href="https://facebook.com/adpreferences">facebook.com/adpreferences</a></li>
+    </ul>
+
+    <h3>Cookie-Einwilligung &amp; Widerruf</h3>
+    <p>
+      Du kannst deine Einwilligung jederzeit für die Zukunft widerrufen — am einfachsten
+      über den Cookie-Banner (Einstellungen anpassen) oder per E-Mail an
+      <a href="mailto:hello@tinggiworld.com">hello@tinggiworld.com</a>. Notwendige Funktionen
+      (Google Fonts, technische Grundfunktionen) sind davon ausgenommen.
+    </p>
+  </section>
+
+  <section class="legal-section" id="ds-11">
+    <h2><span class="legal-num">11</span>Auftragsverarbeitung</h2>
+    <p>
+      Sofern wir im Rahmen von AI-Automation-Projekten personenbezogene Daten
+      deiner Kunden oder Mitarbeitenden verarbeiten, schliessen wir mit dir einen
+      <strong>Auftragsverarbeitungsvertrag (AVV)</strong> gemäss Art. 28 DSGVO ab.
+      Dieser regelt Umfang, Zweck und Art der Verarbeitung sowie deine
+      Weisungsrechte als Verantwortlicher.
+    </p>
+  </section>
+
+  <section class="legal-section" id="ds-12">
+    <h2><span class="legal-num">12</span>Beschwerderecht</h2>
+    <p>
+      Wenn du der Ansicht bist, dass die Verarbeitung deiner Daten gegen das
+      Datenschutzrecht verstösst, kannst du Beschwerde einlegen bei:
+    </p>
+    <ul>
+      <li><strong>Schweiz:</strong> Eidgenössischer Datenschutz- und Öffentlichkeitsbeauftragter (EDÖB) — <a href="https://edoeb.admin.ch">edoeb.admin.ch</a></li>
+      <li><strong>EU / EWR:</strong> Zuständige Datenschutzbehörde deines Wohnsitzlandes</li>
+    </ul>
+  </section>
+
+  <section class="legal-section" id="ds-13">
+    <h2><span class="legal-num">13</span>Änderungen dieser Datenschutzerklärung</h2>
+    <p>
+      Wir behalten uns vor, diese Datenschutzerklärung bei Bedarf anzupassen —
+      z. B. bei Änderung der eingesetzten Tools oder gesetzlicher Anforderungen.
+      Die aktuelle Version ist stets auf unserer Website abrufbar. Bei
+      wesentlichen Änderungen informieren wir bestehende Kunden per E-Mail.
+    </p>
+  </section>
+
+  <footer class="legal-footer">
+    <nav class="legal-footer-nav" aria-label="Rechtliches">
+      <a href="index.html">Startseite</a>
+      <a href="agb.html">AGB</a>
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html" aria-current="page">Datenschutz</a>
+      <a href="widerrufsbelehrung.html">Widerruf</a>
+    </nav>
+    Stand: Mai 2026 — Tinggi World, Sulzelstrasse 10, 8846 Willerzell · CHE-158.837.429 ·
+    <a href="mailto:hello@tinggiworld.com">hello@tinggiworld.com</a>
+  </footer>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

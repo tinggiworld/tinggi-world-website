@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AGB — Tinggi World, Schweizer Agentur für AI &amp; Web</title>
+<meta name="description" content="Allgemeine Geschäftsbedingungen von Tinggi World — Schweizer Recht, Gerichtsstand Schwyz, transparente Konditionen für AI Automation, Website + SEO und Gründung.">
+<link rel="canonical" href="https://www.tinggiworld.com/agb.html">
+<meta name="theme-color" content="#06070C">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.tinggiworld.com/agb.html">
+<meta property="og:title" content="AGB — Tinggi World">
+<meta property="og:description" content="Allgemeine Geschäftsbedingungen von Tinggi World — Schweizer Recht, transparente Konditionen.">
+<meta property="og:image" content="https://www.tinggiworld.com/assets/img/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="de_CH">
+<meta property="og:site_name" content="Tinggi World">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AGB — Tinggi World">
+<meta name="twitter:description" content="Allgemeine Geschäftsbedingungen von Tinggi World — Schweizer Recht.">
+<meta name="twitter:image" content="https://www.tinggiworld.com/assets/img/og-image.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Lora:ital,wght@0,400;0,500;1,400&family=Lato:wght@400;500;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+<style>
+  /* Legal page chrome — clean reading layout on top of base tokens */
+  body { background: var(--bg); color: var(--text); }
+  .legal-page {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 140px 6vw 96px;
+  }
+  .legal-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--font-ui);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    color: var(--muted);
+    text-decoration: none;
+    margin-bottom: 36px;
+    transition: color 200ms var(--ease);
+  }
+  .legal-back:hover { color: var(--text); }
+  .legal-eyebrow {
+    font-family: var(--font-ui);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 18px;
+    display: inline-block;
+  }
+  .legal-eyebrow .dot {
+    display: inline-block;
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 12px;
+    transform: translateY(-2px);
+  }
+  .legal-title {
+    font-family: var(--font-display);
+    font-size: clamp(38px, 5vw, 60px);
+    font-weight: 500;
+    line-height: 1.08;
+    letter-spacing: -0.015em;
+    margin-bottom: 24px;
+    text-wrap: balance;
+  }
+  .legal-meta {
+    font-family: var(--font-body);
+    font-size: 15.5px;
+    line-height: 1.7;
+    color: var(--muted);
+    margin-bottom: 12px;
+  }
+  .legal-meta strong { color: var(--text); font-weight: 500; }
+  .legal-meta a { color: var(--terracotta); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 200ms var(--ease); }
+  .legal-meta a:hover { border-bottom-color: var(--terracotta); }
+  .legal-validity {
+    font-family: var(--font-ui);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--terracotta);
+    margin-bottom: 48px;
+    padding-top: 12px;
+    border-top: 1px solid var(--border);
+    display: inline-block;
+    padding-right: 24px;
+  }
+
+  .legal-toc {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 22px 26px;
+    margin-bottom: 56px;
+  }
+  .legal-toc-title {
+    font-family: var(--font-ui);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 12px;
+  }
+  .legal-toc ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    columns: 2;
+    column-gap: 28px;
+    counter-reset: agb;
+  }
+  @media (max-width: 600px) {
+    .legal-toc ol { columns: 1; }
+  }
+  .legal-toc li {
+    counter-increment: agb;
+    font-family: var(--font-body);
+    font-size: 14.5px;
+    line-height: 1.55;
+    padding: 4px 0;
+    break-inside: avoid;
+  }
+  .legal-toc li::before {
+    content: counter(agb, decimal-leading-zero) "  ";
+    color: var(--terracotta);
+    font-family: var(--font-ui);
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.06em;
+  }
+  .legal-toc a {
+    color: var(--text);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 200ms var(--ease);
+  }
+  .legal-toc a:hover { border-bottom-color: var(--text); }
+
+  .legal-section {
+    margin-bottom: 44px;
+    scroll-margin-top: calc(64px + 24px);
+  }
+  .legal-section h2 {
+    font-family: var(--font-display);
+    font-size: clamp(22px, 2.2vw, 26px);
+    font-weight: 500;
+    line-height: 1.25;
+    margin-bottom: 14px;
+    color: var(--text);
+    letter-spacing: -0.005em;
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+  }
+  .legal-section h2 .legal-num {
+    font-family: var(--font-ui);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    color: var(--terracotta);
+    flex-shrink: 0;
+    width: 32px;
+  }
+  .legal-section p,
+  .legal-section ul {
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.75;
+    color: var(--text);
+    margin-bottom: 12px;
+    text-wrap: pretty;
+    padding-left: 46px;
+  }
+  .legal-section ul {
+    list-style: none;
+    padding-left: 46px;
+  }
+  .legal-section ul li {
+    position: relative;
+    padding-left: 22px;
+    margin-bottom: 8px;
+  }
+  .legal-section ul li::before {
+    content: "—";
+    position: absolute;
+    left: 0;
+    color: var(--terracotta);
+    font-weight: 700;
+  }
+  .legal-section strong { font-weight: 500; color: var(--text); }
+  .legal-section a {
+    color: var(--terracotta);
+    text-decoration: none;
+    border-bottom: 1px solid var(--terracotta);
+    padding-bottom: 1px;
+  }
+  .legal-section a:hover { opacity: 0.75; }
+
+  @media (max-width: 600px) {
+    .legal-section h2 { flex-direction: column; gap: 4px; }
+    .legal-section p,
+    .legal-section ul { padding-left: 0; }
+  }
+
+  .legal-footer {
+    margin-top: 56px;
+    padding-top: 28px;
+    border-top: 1px solid var(--border);
+    font-family: var(--font-body);
+    font-size: 14px;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+  .legal-footer a { color: var(--text); text-decoration: none; border-bottom: 1px solid var(--border); transition: border-color 200ms var(--ease); }
+  .legal-footer a:hover { border-bottom-color: var(--text); }
+</style>
+
+<!-- Privacy-friendly analytics by Plausible — wird nach Consent (Analyse) geladen -->
+<script type="text/plain" data-cookie-consent="analytics" async src="https://plausible.io/js/pa-MJmjMK8x1ovVNPynp-o6t.js"></script>
+<script type="text/plain" data-cookie-consent="analytics">
+  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+  plausible.init()
+</script>
+
+<!-- LinkedIn Insight Tag: ID hier eintragen (ersetze PARTNER_ID_HIER_EINTRAGEN) — wird nach Consent (Marketing) geladen -->
+<script type="text/plain" data-cookie-consent="marketing">
+  _linkedin_partner_id = "PARTNER_ID_HIER_EINTRAGEN";
+  window._linkedin_data_partner_ids = (window._linkedin_data_partner_ids || []);
+  window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+  (function(l){if(!l){window.lintrk=function(a,b){window.lintrk.q.push([a,b])};window.lintrk.q=[]}
+    var s=document.getElementsByTagName("script")[0];var b=document.createElement("script");
+    b.type="text/javascript";b.async=true;b.src="https://snap.licdn.com/li.lms-analytics/insight.min.js";
+    s.parentNode.insertBefore(b,s)})(window.lintrk);
+</script>
+
+<!-- Meta Pixel: ID hier eintragen (ersetze PIXEL_ID_HIER_EINTRAGEN) — wird nach Consent (Marketing) geladen -->
+<script type="text/plain" data-cookie-consent="marketing">
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init','PIXEL_ID_HIER_EINTRAGEN');
+  fbq('track','PageView');
+</script>
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <a href="index.html" class="nav-brand" aria-label="Tinggi World">
+    <span class="token-stream" aria-hidden="true">
+      <span class="ts-bar ts-1"></span>
+      <span class="ts-bar ts-2"></span>
+      <span class="ts-bar ts-3"></span>
+      <span class="ts-bar ts-4"></span>
+    </span>
+    <span class="nav-brand-text">Tinggi<span class="nav-brand-accent"> World</span></span>
+  </a>
+  <div class="nav-links" id="navLinks">
+    <a href="index.html#ai"       class="nav-link" data-pill="ai"><span class="nav-dot"></span>AI Automation</a>
+    <a href="index.html#web-seo"  class="nav-link" data-pill="web"><span class="nav-dot"></span>Website + SEO</a>
+    <a href="index.html#coaching" class="nav-link" data-pill="coach"><span class="nav-dot"></span>Business Aufbau</a>
+    <a href="index.html#tinggi"   class="nav-link" data-pill="about"><span class="nav-dot"></span>Über uns</a>
+    <a href="index.html#faq"      class="nav-link" data-pill="faq"><span class="nav-dot"></span>FAQ</a>
+  </div>
+  <button class="nav-burger" id="navBurger" aria-label="Menü">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<main class="legal-page">
+
+  <a href="index.html" class="legal-back">
+    <span aria-hidden="true">←</span> Zurück zur Startseite
+  </a>
+
+  <span class="legal-eyebrow">
+    <span class="dot" style="background: var(--terracotta);"></span>
+    <span class="dot" style="background: var(--forest); margin-left: -6px;"></span>
+    <span class="dot" style="background: var(--ink); margin-left: -6px;"></span>
+    Rechtliches
+  </span>
+
+  <h1 class="legal-title">Allgemeine Geschäftsbedingungen.</h1>
+
+  <p class="legal-meta">
+    <strong>Tinggi World</strong><br>
+    Sulzelstrasse 10, 8846 Willerzell, Schweiz<br>
+    CHE-158.837.429 · <a href="mailto:hello@tinggiworld.com">hello@tinggiworld.com</a>
+  </p>
+  <div class="legal-validity">Gültig ab 1. Mai 2026</div>
+
+  <nav class="legal-toc" aria-label="Inhaltsverzeichnis">
+    <div class="legal-toc-title">Inhalt</div>
+    <ol>
+      <li><a href="#agb-1">Geltungsbereich</a></li>
+      <li><a href="#agb-2">Vertragsgegenstand und Vertragsart</a></li>
+      <li><a href="#agb-3">Angebote und Vertragsabschluss</a></li>
+      <li><a href="#agb-4">Preise und Zahlungsbedingungen</a></li>
+      <li><a href="#agb-5">Abnahme und Lieferung</a></li>
+      <li><a href="#agb-6">Laufzeit und Kündigung</a></li>
+      <li><a href="#agb-7">Mitwirkungspflichten des Kunden</a></li>
+      <li><a href="#agb-8">Haftungsbeschränkung</a></li>
+      <li><a href="#agb-9">Geistiges Eigentum</a></li>
+      <li><a href="#agb-10">Datenschutz</a></li>
+      <li><a href="#agb-11">Vertraulichkeit</a></li>
+      <li><a href="#agb-12">Onlinekurse und digitale Produkte</a></li>
+      <li><a href="#agb-13">Service Level Agreement</a></li>
+      <li><a href="#agb-14">Anwendbares Recht und Gerichtsstand</a></li>
+      <li><a href="#agb-15">Änderungen der AGB</a></li>
+    </ol>
+  </nav>
+
+  <section class="legal-section" id="agb-1">
+    <h2><span class="legal-num">01</span>Geltungsbereich</h2>
+    <p>
+      Diese Allgemeinen Geschäftsbedingungen (AGB) gelten für alle Leistungen von
+      Tinggi World (nachfolgend «Anbieter») gegenüber dem Auftraggeber (nachfolgend
+      «Kunde»). Abweichende Bedingungen des Kunden gelten nur, wenn der Anbieter
+      diese ausdrücklich schriftlich bestätigt hat.
+    </p>
+  </section>
+
+  <section class="legal-section" id="agb-2">
+    <h2><span class="legal-num">02</span>Vertragsgegenstand und Vertragsart</h2>
+    <p>
+      Sämtliche Leistungen von Tinggi World werden als <strong>Dienstvertrag</strong>
+      erbracht. Es handelt sich nicht um einen Werkvertrag; es wird kein bestimmter
+      Erfolg geschuldet, sofern nicht ausdrücklich schriftlich etwas anderes
+      vereinbart wurde. Insbesondere werden keine Garantien für Suchmaschinen-Rankings,
+      Conversion-Raten oder Umsatzsteigerungen abgegeben.
+    </p>
+  </section>
+
+  <section class="legal-section" id="agb-3">
+    <h2><span class="legal-num">03</span>Angebote und Vertragsabschluss</h2>
+    <p>
+      Angebote von Tinggi World sind freibleibend und unverbindlich. Ein Vertrag
+      kommt erst durch schriftliche Auftragsbestätigung (E-Mail genügt) zustande.
+      Der Anbieter behält sich vor, Aufträge ohne Angabe von Gründen abzulehnen.
+    </p>
+  </section>
+
+  <section class="legal-section" id="agb-4">
+    <h2><span class="legal-num">04</span>Preise und Zahlungsbedingungen</h2>
+    <p>
+      Alle Preise verstehen sich in Schweizer Franken (CHF) exklusive der
+      gesetzlichen Mehrwertsteuer, sofern nicht anders angegeben.
+    </p>
+    <ul>
+      <li><strong>Einmalleistungen:</strong> 50 % bei Vertragsabschluss, 50 % bei Lieferung / Abnahme.</li>
+      <li><strong>Retainer / Monatspauschalen:</strong> Rechnungsstellung zu Beginn der Leistungsperiode, zahlbar innert 14 Tagen.</li>
+      <li><strong>Zusatzaufwand:</strong> CHF 200 / Stunde im 15-Minuten-Takt, monatlich fakturiert.</li>
+    </ul>
+    <p>
+      Bei Zahlungsverzug werden Verzugszinsen von 5 % p. a. und ab der zweiten
+      Mahnung eine Mahngebühr von CHF 20 fällig. Der Anbieter behält sich vor,
+      bei Zahlungsverzug die Leistung zu unterbrechen.
+    </p>
+  </section>
+
+  <section class="legal-section" id="agb-5">
+    <h2><span class="legal-num">05</span>Abnahme und Lieferung</h2>
+    <p>
+      Nach Lieferung hat der Kunde <strong>10 Arbeitstage</strong> Zeit, das Ergebnis
+      schriftlich zu prüfen und begründete Mängel zu melden. Erfolgt keine
+      Rückmeldung innerhalb dieser Frist, gilt die Leistung als abgenommen.
+      Kleinere Korrekturen (bis 1 Stunde Aufwand) sind im Projektpreis enthalten.
+    </p>
+  </section>
+
+  <section class="legal-section" id="agb-6">
+    <h2><span class="legal-num">06</span>Laufzeit und Kündigung</h2>
+    <p>
+      Retainer-Verträge haben eine Mindestlaufzeit gemäss Angebot. Nach Ablauf
+      der Mindestlaufzeit verlängern sie sich automatisch um einen Monat und sind
+      mit einer Kündigungsfrist von 30 Tagen zum Monatsende kündbar. Die
+      Kündigung muss schriftlich per E-Mail erfolgen.
+    </p>
+  </section>
+
+  <section class="legal-section" id="agb-7">
+    <h2><span class="legal-num">07</span>Mitwirkungspflichten des Kunden</h2>
+    <p>
+      Der Kunde ist verpflichtet, dem Anbieter alle für die Leistungserbringung
+      notwendigen Informationen, Materialien und Zugänge rechtzeitig zur
+      Verfügung zu stellen. Verzögerungen durch fehlende Mitwirkung des Kunden
+      gehen nicht zu Lasten des Anbieters und können zu Terminverschiebungen
+      und Mehrkosten führen.
+    </p>
+  </section>
+
+  <section class="legal-section" id="agb-8">
+    <h2><span class="legal-num">08</span>Haftungsbeschränkung</h2>
+    <p>
+      Der Anbieter haftet nur für Schäden, die auf grobe Fahrlässigkeit oder
+      vorsätzliches Handeln zurückzuführen sind. Die Haftung für leichte
+      Fahrlässigkeit sowie für indirekte Schäden, entgangenen Gewinn oder
+      Datenverlust ist ausgeschlossen, soweit gesetzlich zulässig.
+    </p>
+    <p>
+      Bei AI-Automationen haftet der Anbieter nicht für Fehler oder Ausfälle von
+      Drittanbieter-Tools (wie n8n, Make, OpenAI) nach Projektabschluss.
+    </p>
+  </section>
+
+  <section class="legal-section" id="agb-9">
+    <h2><span class="legal-num">09</span>Geistiges Eigentum</h2>
+    <p>
+      Nach vollständiger Bezahlung gehen alle erstellten Werke (Website-Code,
+      Texte, Designs) in das Eigentum des Kunden über, sofern nicht anders
+      vereinbart. Nicht bezahlte Werke verbleiben Eigentum des Anbieters. Der
+      Anbieter behält das Recht, die Zusammenarbeit im Portfolio zu erwähnen.
+    </p>
+  </section>
+
+  <section class="legal-section" id="agb-10">
+    <h2><span class="legal-num">10</span>Datenschutz</h2>
+    <p>
+      Der Anbieter verarbeitet Kundendaten gemäss dem Schweizer Datenschutzgesetz
+      (DSG) sowie der DSGVO für Kunden in der EU / EWR. Details entnimmst du der
+      <a href="datenschutz.html">Datenschutzerklärung</a>.
+    </p>
+  </section>
+
+  <section class="legal-section" id="agb-11">
+    <h2><span class="legal-num">11</span>Vertraulichkeit</h2>
+    <p>
+      Beide Parteien verpflichten sich, vertrauliche Informationen der jeweils
+      anderen Partei nicht an Dritte weiterzugeben. Diese Pflicht gilt auch nach
+      Beendigung des Vertragsverhältnisses.
+    </p>
+  </section>
+
+  <section class="legal-section" id="agb-12">
+    <h2><span class="legal-num">12</span>Onlinekurse und digitale Produkte</h2>
+    <p>
+      Bei digitalen Produkten und Onlinekursen besteht kein Widerrufsrecht nach
+      Gewährung des Zugangs, da der Vertragsgegenstand vollständig digital
+      geliefert wird und der Zugang unmittelbar nach Zahlung erfolgt.
+    </p>
+  </section>
+
+  <section class="legal-section" id="agb-13">
+    <h2><span class="legal-num">13</span>Service Level Agreement (Wartungsverträge)</h2>
+    <p>
+      Bei aktiven Wartungsverträgen gilt: Reaktionszeit innert <strong>1 Arbeitstag</strong>;
+      bei kritischen Fehlern (Website komplett nicht erreichbar) innert
+      <strong>8 Stunden</strong> während Geschäftszeiten (Mo–Fr, 09:00–17:00 Uhr).
+    </p>
+  </section>
+
+  <section class="legal-section" id="agb-14">
+    <h2><span class="legal-num">14</span>Anwendbares Recht und Gerichtsstand</h2>
+    <p>
+      Es gilt ausschliesslich Schweizerisches Recht. Gerichtsstand ist Schwyz
+      (SZ), Schweiz. Für Kunden aus der EU / EWR gelten zusätzlich die
+      zwingenden Verbraucherschutzbestimmungen des jeweiligen Landes.
+    </p>
+  </section>
+
+  <section class="legal-section" id="agb-15">
+    <h2><span class="legal-num">15</span>Änderungen der AGB</h2>
+    <p>
+      Der Anbieter behält sich vor, diese AGB jederzeit zu ändern. Kunden werden
+      über wesentliche Änderungen per E-Mail informiert. Die weitere
+      Inanspruchnahme der Dienstleistungen nach Benachrichtigung gilt als
+      Zustimmung zu den geänderten AGB.
+    </p>
+  </section>
+
+  <footer class="legal-footer">
+    <nav class="legal-footer-nav" aria-label="Rechtliches">
+      <a href="index.html">Startseite</a>
+      <a href="agb.html" aria-current="page">AGB</a>
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
+      <a href="widerrufsbelehrung.html">Widerruf</a>
+    </nav>
+    Stand: Mai 2026 — Tinggi World, Sulzelstrasse 10, 8846 Willerzell · CHE-158.837.429 ·
+    <a href="mailto:hello@tinggiworld.com">hello@tinggiworld.com</a>
+  </footer>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
