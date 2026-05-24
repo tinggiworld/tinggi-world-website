@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Termin buchen · Tinggi World</title>
+<meta name="description" content="Kostenloses 30-Minuten-Erstgespräch mit Romina oder Michel — unverbindlich, per Zoom oder Telefon.">
+<link rel="canonical" href="https://www.tinggiworld.com/buchen">
+<meta name="theme-color" content="#06070C">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.tinggiworld.com/buchen">
+<meta property="og:title" content="Termin buchen · Tinggi World">
+<meta property="og:description" content="Kostenloses 30-Minuten-Erstgespräch mit Romina oder Michel — unverbindlich, per Zoom oder Telefon.">
+<meta property="og:image" content="https://www.tinggiworld.com/assets/img/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="de_CH">
+<meta property="og:site_name" content="Tinggi World">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Termin buchen · Tinggi World">
+<meta name="twitter:description" content="Kostenloses 30-Minuten-Erstgespräch mit Romina oder Michel.">
+<meta name="twitter:image" content="https://www.tinggiworld.com/assets/img/og-image.png">
+
+<link rel="stylesheet" href="styles.css?v=v04-2">
+<style>
+/* HARD-FORCE DARK FUTURE — overrides any cached CSS */
+html,body{background:#06070C !important;color:#EDEEF1 !important}
+body{position:relative;z-index:0}
+main,footer{position:relative;z-index:10}
+</style>
+<style>
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #06070C;
+}
+::-webkit-scrollbar-thumb {
+  background: #E8623A;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ff7a4a;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #E8623A #06070C;
+}
+
+/* Calendly iframe scrollbar verstecken */
+.calendly-inline-widget iframe {
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
+}
+
+.calendly-inline-widget iframe::-webkit-scrollbar {
+  display: none !important;
+}
+
+.calendly-inline-widget {
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
+}
+
+.calendly-inline-widget::-webkit-scrollbar {
+  display: none !important;
+}
+</style>
+
+<!-- Privacy-friendly analytics by Plausible -->
+<script async src="https://plausible.io/js/pa-MJmjMK8x1ovVNPynp-o6t.js"></script>
+<script>
+  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+  plausible.init()
+</script>
+</head>
+<body data-motion="subtle">
+
+<!-- Background layers -->
+<div class="bg-grid" aria-hidden="true"></div>
+<div class="bg-corner bg-corner--tl" aria-hidden="true"></div>
+<div class="bg-corner bg-corner--tr" aria-hidden="true"></div>
+<div class="bg-corner bg-corner--bl" aria-hidden="true"></div>
+<div class="bg-corner bg-corner--br" aria-hidden="true"></div>
+<div class="bg-noise" aria-hidden="true"></div>
+
+<!-- Scroll progress bar -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- Section indicator (right side) -->
+<aside class="section-indicator" id="sectionIndicator" aria-label="Navigation">
+  <a class="indicator-dot active" data-target="hero" data-pillar="other" href="#hero">
+    <span class="indicator-tooltip">Start</span>
+  </a>
+  <a class="indicator-dot" data-target="booking" data-pillar="other" href="#booking">
+    <span class="indicator-tooltip">Termin buchen</span>
+  </a>
+</aside>
+
+<!-- ========== NAV (Floating Pill) ========== -->
+<nav class="nav" id="nav">
+  <a href="index.html" class="nav-brand" aria-label="Tinggi World">
+    <span class="token-stream" aria-hidden="true">
+      <span class="ts-bar ts-1"></span>
+      <span class="ts-bar ts-2"></span>
+      <span class="ts-bar ts-3"></span>
+      <span class="ts-bar ts-4"></span>
+    </span>
+    <span class="nav-brand-text">Tinggi<span class="nav-brand-accent"> World</span></span>
+  </a>
+  <div class="nav-links" id="navLinks">
+    <a href="index.html#ai" class="nav-link" data-pill="ai"><span class="nav-dot"></span>AI Automation</a>
+    <a href="index.html#web-seo" class="nav-link" data-pill="web"><span class="nav-dot"></span>Website + SEO</a>
+    <a href="index.html#coaching" class="nav-link" data-pill="coach"><span class="nav-dot"></span>Business Aufbau</a>
+    <a href="index.html#tinggi" class="nav-link" data-pill="about"><span class="nav-dot"></span>Über uns</a>
+    <a href="index.html#faq" class="nav-link" data-pill="faq"><span class="nav-dot"></span>FAQ</a>
+  </div>
+  <button class="nav-burger" id="navBurger" aria-label="Menü">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<main>
+
+<!-- ========== HERO (Booking) ========== -->
+<section class="section sec-book" id="hero">
+  <div class="container-narrow">
+
+    <article class="book-cta">
+      <span class="book-cta-eyebrow">
+        <span class="dot"></span>
+        30 Minuten · Kostenlos
+      </span>
+      <h1 class="book-cta-title">Termin <span class="h-display" style="color:var(--terracotta)">buchen.</span></h1>
+      <p class="book-cta-sub">Wir blocken die Zeit. Du wählst nur noch das Datum.<br>Ehrlich — auch wenn wir nicht passen.</p>
+
+      <div class="book-cta-checks">
+        <span><span class="book-cta-ico">✓</span> Kostenlos + unverbindlich</span>
+        <span class="book-cta-sep">·</span>
+        <span><span class="book-cta-ico">✓</span> Zoom oder Telefon</span>
+        <span class="book-cta-sep">·</span>
+        <span><span class="book-cta-ico">✓</span> Mit Romina oder Michel persönlich</span>
+      </div>
+
+      <div class="book-cta-presence">
+        <span class="presence-avatar" style="background-image:url('assets/img/romina_webp.webp')">
+          <span class="presence-status"></span>
+        </span>
+        <span class="book-cta-presence-text">
+          <strong>Romina ist online</strong>
+          <span>Antwort meist innert 2 h · Mo–Fr</span>
+        </span>
+      </div>
+    </article>
+
+    <!-- ========== CALENDLY EMBED ========== -->
+    <div id="booking" style="margin-top:32px;scroll-margin-top:100px;border-radius:24px;overflow:hidden;background:#06070C;border:1px solid rgba(255,255,255,0.06);max-width:900px;margin-left:auto;margin-right:auto;">
+      <div class="calendly-inline-widget"
+           data-url="https://calendly.com/hello-tinggiworld/30min?hide_gdpr_banner=1&background_color=06070C&text_color=edeef1&primary_color=e8623a"
+           style="min-width:320px;height:1400px;background:#06070C;">
+      </div>
+      <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+    </div>
+
+    <!-- ========== ALTERNATIVE KONTAKT ========== -->
+    <div class="book-alt" style="margin-top:32px;">
+      <span class="book-alt-label">Lieber schreiben?</span>
+      <a href="mailto:hello@tinggiworld.com" class="book-alt-mail">hello@tinggiworld.com →</a>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<!-- ========== FOOTER ========== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="footer-brand">Tinggi World</a>
+        <p class="footer-tag">Beratung für Gründer, Selbstständige und KMU — Business. Aufgebaut. Sichtbar. Automatisiert.</p>
+        <div class="footer-swiss">
+          <svg class="ch-flag" width="14" height="14" viewBox="0 0 32 32" aria-hidden="true">
+            <rect width="32" height="32" fill="#D52B1E" rx="2"/>
+            <rect x="13" y="6" width="6" height="20" fill="#fff"/>
+            <rect x="6" y="13" width="20" height="6" fill="#fff"/>
+          </svg>
+          Built in Switzerland
+        </div>
+      </div>
+      <div>
+        <h4>Angebot</h4>
+        <ul>
+          <li><a href="index.html#ai">AI Automation</a></li>
+          <li><a href="index.html#web-seo">Website + SEO</a></li>
+          <li><a href="index.html#coaching">Business Aufbau</a></li>
+          <li><a href="buchen.html">Erstgespräch</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Unternehmen</h4>
+        <ul>
+          <li><a href="index.html#tinggi">Über uns</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
+          <li><a href="mailto:hello@tinggiworld.com">Kontakt</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Rechtliches</h4>
+        <ul>
+          <li><a href="agb.html">AGB</a></li>
+          <li><a href="impressum.html">Impressum</a></li>
+          <li><a href="datenschutz.html">Datenschutz</a></li>
+          <li><a href="widerrufsbelehrung.html">Widerrufsbelehrung</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div>© 2026 Tinggi World · Sulzelstrasse 10, 8846 Willerzell · CHE-158.837.429</div>
+      <div><a href="mailto:hello@tinggiworld.com">hello@tinggiworld.com</a></div>
+    </div>
+    <p class="footer-disclaimer">
+      Alle dargestellten Tool- und App-Logos sind Eigentum der jeweiligen Markeninhaber und werden ausschliesslich zur Darstellung kompatibler Integrationen verwendet. Es besteht keine offizielle Partnerschaft oder Endorsement.
+    </p>
+  </div>
+</footer>
+
+<script src="script.js?v=v04-2"></script>
+</body>
+</html>
